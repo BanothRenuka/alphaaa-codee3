@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+
+        <!-- Dashboard Summary -->
+        <div class="dashboard">
+            <h2>Today's Summary</h2>
+
+            <div class="progress-box">
+                <label>Steps</label>
+                <div class="progress-bar">
+                    <div id="stepsProgress"></div>
+                </div>
+                <span id="totalSteps">0</span> / 10000
+            </div>
+
+            <div class="progress-box">
+                <label>Calories Burned</label>
+                <div class="progress-bar">
+                    <div id="caloriesProgress"></div>
+                </div>
+                <span id="totalCalories">0</span> / 500
+            </div>
+
+            <div class="progress-box">
+                <label>Workout Minutes</label>
+                <div class="progress-bar">
+                    <div id="workoutProgress"></div>
+                </div>
+                <span id="totalWorkout">0</span> / 120
+            </div>
+        </div>
+
+        <!-- Add Activity -->
+        <div class="form-section">
+            <h2>Add Activity</h2>
+
+            <input type="number" id="stepsInput" placeholder="Steps">
+            <input type="number" id="caloriesInput" placeholder="Calories Burned">
+            <input type="number" id="workoutInput" placeholder="Workout Minutes">
+            <button onclick="addActivity()">Add Activity</button>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="log-section">
+            <h2>Activity Log</h2>
+            <ul id="activityList"></ul>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
